@@ -11,3 +11,9 @@ pub struct Comics {
     pub author: String,
     pub status: String
 }
+
+#[derive(serde::Serialize)]
+#[serde(crate = "rocket::serde")]
+pub struct Response {
+    pub status: bool
+}
